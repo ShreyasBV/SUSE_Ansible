@@ -3,4 +3,4 @@
   become: true
   tasks:
   - name: Executing the command
-      command: 'df -hT >> /home/output.txt'
+      command: "df -hT >> /home/output.txt"
