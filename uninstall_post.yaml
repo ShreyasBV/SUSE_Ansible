@@ -1,4 +1,4 @@
-name: This playbook is to uninstall Postfix Service
+-name: This playbook is to uninstall Postfix Service
   hosts: TestServer
   become: true
   tasks:
