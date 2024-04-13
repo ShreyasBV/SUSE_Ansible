@@ -7,3 +7,6 @@
       name: '*'
       state: latest
   
+  - name: Patching Completed. Rebooting the server
+    ansible.builtin.reboot:
+      msg: "Rebooting machine in 5 seconds"
