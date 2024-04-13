@@ -1,0 +1,9 @@
+- name: This playbook is to patch SUSE Server
+  hosts: TestServer
+  become: true
+  tasks:
+  - name: This task is to Patch SUSE Server
+    ansible.builtin.zypper:
+      name: '*'
+      state: latest
+  
