@@ -9,5 +9,4 @@
   
   - name: Patching Completed. Rebooting the server
     ansible.builtin.reboot:
-      msg: "Rebooting machine in 5 seconds"
-      boot_time_command: uptime | cut -d ' ' -f 5
+      msg: "Patching Completed. Rebooting the server"
