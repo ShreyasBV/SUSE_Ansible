@@ -1,0 +1,6 @@
+- name: This playbook is to save output to a file
+  hosts: TestServer
+  become: true
+  tasks:
+  - name: Executing the command
+      command: df -hT >> /home/output.txt
