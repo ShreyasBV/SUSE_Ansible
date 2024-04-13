@@ -5,9 +5,12 @@
   - name: This task is to install the Postfix Service
     ansible.builtin.zypper:
       name: postfix
-      state: latest
+      state: absent
+      
   - name: This task is to start the Postfix Service
     ansible.builtin.service:
       name: postfix
       state: started
       enabled: yes
+
+  

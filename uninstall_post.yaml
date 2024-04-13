@@ -1,0 +1,8 @@
+name: This playbook is to uninstall Postfix Service
+  hosts: TestServer
+  become: true
+  tasks:
+  - name: This task is to uninstall the Postfix Service
+    ansible.builtin.zypper:
+      name: postfix
+      state: absent
