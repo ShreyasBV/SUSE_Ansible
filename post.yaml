@@ -1,0 +1,13 @@
+- name: This playbook is to test the installation and starting the postfix
+  hosts: TestServer
+  become: true
+  tasks:
+  - name: This task is to install the Postfix Service
+    ansible.builtin.zypper:
+      name: postfix
+      state: latest
+  - name: This task is to start the Postfix Service
+    ansible.builtin.service:
+      name: postfix
+      state: started
+      enabled: yes
